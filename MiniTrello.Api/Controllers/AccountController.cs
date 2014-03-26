@@ -16,7 +16,7 @@ using System.Security.Cryptography;
 namespace MiniTrello.Api.Controllers
 {
     public class AccountController : ApiController
-    {
+    {//
         readonly IReadOnlyRepository _readOnlyRepository;
         readonly IWriteOnlyRepository _writeOnlyRepository;
         readonly IMappingEngine _mappingEngine;
