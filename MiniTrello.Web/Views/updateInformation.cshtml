@@ -1,0 +1,25 @@
+﻿@{
+    PageData["title"] = "MiniTrello | Update Information";
+}
+<div class="row" style="margin-top:20px" >
+    <div class=" col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <form role="form">
+        <fieldset ng-repeat="account in accounts">
+            <center><h2>Your Profile</h2></center>
+            <hr class="colorgraph">
+            <div class="form-group">
+                <input type="email" name="email" ng-model="UpdateInformationModel.Email" id="email" class="form-control input-lg" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="firstname" ng-model="UpdateInformationModel.FirstName" id="firstname" class="form-control input-lg" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="lastname" ng-model="UpdateInformationModel.LastName" id="lastname" class="form-control input-lg" placeholder="Last Name">
+            </div>
+
+            <hr class="colorgraph">
+            <button ng-click="updateInformation()"></button>
+        </fieldset>
+    </form>
+</div>
+</div>
