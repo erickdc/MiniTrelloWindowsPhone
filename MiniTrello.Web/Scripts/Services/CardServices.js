@@ -17,5 +17,5 @@ angular.module('app.services').factory('BoardServices', ['$http', '$window', fun
         return $http.post(baseUrl + '/createBoard/' + $window.sessionStorage.token, model);
     };
     return board;
-
+    //
 }]);*/
