@@ -4,9 +4,9 @@ angular.module('app.services').factory('OrganizationServices', ['$http', '$windo
 
     var organization = {};
 
-    var baseRemoteUrl = "http://minitrelloapi.apphb.com";
+    var baseRemoteUrl = "http://minitrelloapierick.apphb.com";
     var baseLocalUrl = "http://localhost:1416";
-    var baseUrl = baseLocalUrl;
+    var baseUrl = baseRemoteUrl;
 
     organization.getOrganizationsForLoggedUser = function () {
         return $http.get(baseUrl + '/organizations/' + $window.sessionStorage.token);

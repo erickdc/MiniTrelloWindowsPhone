@@ -4,9 +4,9 @@ angular.module('app.services').factory('BoardServices', ['$http', '$window', fun
 
     var board = {};
 
-    var baseRemoteUrl = "http://minitrelloapi.apphb.com";
+    var baseRemoteUrl = "http://minitrelloapierick.apphb.com";
     var baseLocalUrl = "http://localhost:1416";
-    var baseUrl = baseLocalUrl;
+    var baseUrl = baseRemoteUrl;
 
     board.getBoardsForLoggedUser = function (id) {
         return $http.get(baseUrl + '/organizations/' + id + '/boards/' + $window.sessionStorage.token);

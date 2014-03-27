@@ -4,9 +4,9 @@ angular.module('app.services').factory('LaneServices', ['$http', '$window', func
 
     var lane= {};
 
-    var baseRemoteUrl = "http://minitrelloapi.apphb.com";
+    var baseRemoteUrl = "http://minitrelloapierick.apphb.com";
     var baseLocalUrl = "http://localhost:1416";
-    var baseUrl = baseLocalUrl;
+    var baseUrl = baseRemoteUrl;
 
     lane.getLanesForLoggedUser = function (id) {
         return $http.get(baseUrl + '/boards/' + id + '/lanes/' + $window.sessionStorage.token);
