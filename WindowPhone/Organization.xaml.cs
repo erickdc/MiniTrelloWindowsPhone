@@ -29,7 +29,7 @@ namespace WindowPhone
                     if (r.Data != null)
                     {
 
-                        MessageBox.Show("Funciono");
+                      
                         OrgaList.ItemsSource = r.Data;
                       
 

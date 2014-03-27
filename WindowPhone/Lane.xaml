@@ -13,6 +13,18 @@
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
 
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="AddLaneTemplate">
+            <StackPanel VerticalAlignment="Top">
+
+                <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" />
+                <TextBlock Text="{Binding Description}" HorizontalAlignment="Center" />
+                <Button Content="Go" Tag="{Binding Id,Mode=OneWay}" Click="Button_Click_1" ></Button>
+
+
+            </StackPanel>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
     <!--LayoutRoot es la cuadrícula raíz donde se coloca todo el contenido de la página-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -28,7 +40,10 @@
 
         <!--ContentPanel. Colocar aquí el contenido adicional-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <phone:LongListSelector Grid.Row="1" x:Name="LaneList" Background="Transparent"
+            ItemTemplate="{StaticResource AddLaneTemplate}"
+            LayoutMode="List"                     
+                                 />
         </Grid>
     </Grid>
 

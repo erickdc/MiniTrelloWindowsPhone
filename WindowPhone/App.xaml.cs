@@ -21,6 +21,7 @@ namespace WindowPhone
         public static string Token { get; set; }
         public static Object OrganizationId { get; set; }
         public static object BoardId { get; set; }
+        public static object LaneId { get; set; }
 
         /// <summary>
         /// Constructor para el objeto Application.

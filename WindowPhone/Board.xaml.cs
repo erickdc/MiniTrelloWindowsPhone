@@ -28,7 +28,6 @@ namespace WindowPhone
                     if (r.Data != null)
                     {
 
-                        MessageBox.Show("Funciono");
                         BoardList.ItemsSource = r.Data;
 
                     }
@@ -40,6 +39,7 @@ namespace WindowPhone
         {
             Button bt = (Button)sender;
             App.BoardId = bt.Tag;
+            NavigationService.Navigate(new Uri("/lane.xaml", UriKind.Relative));
         }     
     }
 }

@@ -79,7 +79,7 @@ namespace MiniTrello.Api.Controllers
 
     public class BoardModel
     {
-        public long Id;
+        public long Id { get; set; };
         public string Name { get; set; }
         public string Description { get; set; }
     }
