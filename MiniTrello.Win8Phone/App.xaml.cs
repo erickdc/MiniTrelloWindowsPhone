@@ -19,6 +19,7 @@ namespace MiniTrello.Win8Phone
         public static PhoneApplicationFrame RootFrame { get; private set; }
 
         public static string Token { get; set; }
+       
 
         /// <summary>
         /// Constructor for the Application object.

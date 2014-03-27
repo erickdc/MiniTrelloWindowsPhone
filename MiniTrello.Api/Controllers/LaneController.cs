@@ -107,7 +107,7 @@ namespace MiniTrello.Api.Controllers
 
     public class LaneModel
     {
-        public long ID { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 

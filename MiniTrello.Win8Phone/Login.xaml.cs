@@ -41,7 +41,7 @@ namespace MiniTrello.Win8Phone
                     {
                         App.Token = r.Data.Token;
                         MessageBox.Show("Welcome");
-
+                        NavigationService.Navigate(new Uri("/Organizations.xaml", UriKind.Relative));
                     }
                 }
             });
