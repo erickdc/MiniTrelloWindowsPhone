@@ -95,7 +95,7 @@ namespace MiniTrello.Api.Controllers
     public class CrearCardModel
     {
       
-        public string Infomation { get; set; }
+        public string Information { get; set; }
 
     }
 
